@@ -1,8 +1,11 @@
 $navy: #001e38;
 $green: #15b78f;
-
+$background: #f6f6f7;
+$bg: $background ;
+$color_txt: #333333;
 html {
-  background-color: $navy;
+  background-color: $bg;
+  color: $color_txt;
 }
 
 body {
@@ -32,4 +35,8 @@ h1 {
   100% {
     transform: rotate(20deg);
   }
+}
+
+.mail{
+  
 }
