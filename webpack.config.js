@@ -32,12 +32,12 @@ module.exports = {
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const HtmlWebPackPluginConfig = new HtmlWebPackPlugin({
-	template: './app/index.html',
+	template: './src/app/index.html',
 	filename: 'index.html',
 	inject: 'body'
 })
 const config = {
-	entry: './app/app.jsx',
+	entry: './src/app/app.jsx',
 	output: {
 		path: path.resolve('dist'),
 		filename: 'bundle.js'
@@ -47,6 +47,10 @@ const config = {
 			test: /\.(js|jsx)$/,
 			exclude: /node_modules/,
 			use: ['babel-loader']
+		},
+		{
+			test: /\.scss$/,
+			loaders: ['style-loader', 'css-loader', 'sass-loader']
 		}]
 	},
 	plugins: [
