@@ -1,0 +1,32 @@
+
+@import "../../assets/styles/globals";
+.details {
+    height: 100vh;
+    background: $bg;
+    background-color: 1px solid $mail_action;
+    padding-top: 20px;
+    padding-left: 40px;
+    .title{
+        font-weight: bold;
+        font-size: 16px;
+    }
+    .contain{
+        background-color: $white;
+        border: 1px solid $border;
+        border-radius: 10px;
+        width: 90%;
+        .detail {
+            margin: 40px;
+            .title-subject {
+                .subject {
+                    
+                }
+                .email {
+                    color: $blue;
+                }
+            }
+            .text {
+            }
+        }
+    }
+}

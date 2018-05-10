@@ -1,0 +1,47 @@
+@import "globals";
+//@import '../../../node_modules/font-awesome/scss/font-awesome.scss';
+html {
+    
+    color: $color_txt;
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+.mail{
+    #inbox {
+        width: 20vw;
+        border-right: 1px solid $border;
+    }
+    #details {
+        width: 80vw;
+        border-left: 1px solid $border;
+    }
+    .main_item {
+        height: 100vh;
+    }
+}
+
+h1 {
+    color: $green;
+    font-weight: bold;
+    font-size: 3.5rem;
+
+  &:after {
+    content: '👋';
+    display: inline-block;
+    transform: rotate(-20deg);
+    animation: wave .75s infinite linear alternate;
+  }
+}
+
+@keyframes wave {
+  100% {
+    transform: rotate(20deg);
+  }
+}

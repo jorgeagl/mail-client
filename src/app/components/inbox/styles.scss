@@ -1,1 +1,56 @@
-.inbox{}
+@import "../../assets/styles/globals";
+.inbox{
+    .header{
+        display: flex;;
+        justify-content: flex-end;
+        padding: 25px 0;
+        color: $mailAction;
+        border-bottom: 1px solid $border;
+        .item {
+            margin: 0 20px;
+            cursor: pointer;
+            .title {
+                font-size: 12px;
+            }
+            &.active {
+                color: $blue;
+            }
+        }
+    }
+
+    .inboxes {
+        ul {
+            margin: 0;
+            padding: 0;
+            li {
+                cursor: pointer;
+                padding-top: 15px;
+                padding-left: 1.9em;
+                border-bottom: 1px solid $border;
+                .title{
+                    font-weight: bold;
+                    font-size: 16px;
+                }
+                .date {
+                    font-size: 12px;
+                    margin-right: 12px;
+                    float: right;
+                    font-weight: 100;
+                    text-align: right;
+                    color: $short_description;
+                }  
+                .sub-title {
+                    margin-bottom: 1px;
+                }
+                .subject-title {
+                    font-weight: 100;
+                    color: $short_description;
+                    margin-top: 5px;
+                }
+                  
+            }
+        }
+    }
+
+
+}
