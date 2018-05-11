@@ -5,18 +5,20 @@ import './details.scss';
 import store from '../../../store';
 
 class Details extends React.Component {
-    contructor(){}
     
 
     render() {
-        /*this.store.subscribe(() => {
+        let email = [];
+        store.subscribe(() => {
             this.setState({
-                email: store.getState()
+                email: store.getState().email
             })
-        })*/
+        })
+        
         return (
+
             <div className="details">
-            {this.email}
+            
                 <p className="title">Amazon SES Address Verification Request</p>
                 <div className="contain">
                     <div className="detail">

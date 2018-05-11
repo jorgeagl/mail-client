@@ -13,11 +13,11 @@ class HeadInbox extends React.Component {
                         <span className="title">Inbox</span>
                     </div>
                     <div className="item">
-                        <i></i>
+                        <i className="fa fa-user-circle"></i>
                         <span className="title">Trash</span>
                     </div>
                     <div className="item">
-                        <i></i>
+                        <i className="fa fa-user-circle"></i>
                         <span className="title">Spam</span>
                     </div>
                 </div>

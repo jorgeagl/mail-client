@@ -1,13 +1,9 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { render } from 'react-dom';
+import ReactDOM from 'react-dom';
 
-import Inbox from './components/inbox/inbox';
-import Details from './components/details/details';
-import 'font-awesome/scss/font-awesome.scss';
-import 'font-awesome/fonts/fontawesome-webfont.woff2';
-import './assets/styles/app.scss';
-
+import Inbox from './../components/inbox/inbox';
+import Details from './../components/details/details';
 
 let inbox = [
     {
@@ -51,6 +47,6 @@ let inbox = [
     }
 ]
 
-
 ReactDOM.render(<Inbox inbox={inbox} />, document.getElementById('inbox'));
 ReactDOM.render(<Details />, document.getElementById('details'));
+export default Main;

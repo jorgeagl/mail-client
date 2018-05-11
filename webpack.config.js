@@ -48,13 +48,9 @@ const config = {
 			exclude: /node_modules/,
 			use: ['babel-loader']
 		},
-		{
-			test: /\.scss$/,
-			loaders: ['style-loader', 'css-loader', 'sass-loader']
-		},
-		{
-			test: /\.json$/, loader: 'json'
-		},
+		{test: /\.scss$/,loaders: ['style-loader', 'css-loader', 'sass-loader']},
+		{ test: /(\.css$)/, loaders: ['style-loader', 'css-loader'] },
+		{test: /\.json$/, loader: 'json'},
 		{
 			test: /.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
 			use: [{
@@ -65,7 +61,7 @@ const config = {
 					publicPath: '../'       // override the default path
 				}
 			}]
-		},
+		}
 		]
 	},
 	plugins: [
