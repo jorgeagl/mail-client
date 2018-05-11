@@ -23,8 +23,11 @@ npm install
 ```
 
 
-### Run proyect
+## Run proyect
 
 ```bash
-npm run dev
+npm run dev 
+```
+```bash
+npm run prod 
 ```
