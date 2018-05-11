@@ -2,13 +2,21 @@ import React from 'react';
 import { render } from 'react-dom';
 import ReactDOM from 'react-dom';
 import './details.scss';
+import store from '../../../store';
 
 class Details extends React.Component {
     contructor(){}
+    
 
     render() {
+        /*this.store.subscribe(() => {
+            this.setState({
+                email: store.getState()
+            })
+        })*/
         return (
             <div className="details">
+            {this.email}
                 <p className="title">Amazon SES Address Verification Request</p>
                 <div className="contain">
                     <div className="detail">
@@ -37,6 +45,10 @@ class Details extends React.Component {
             </div>
         )
     }
+    subscribe(){
+        subscribe
+    }
+    
 }
 
 export default Details;

@@ -13,7 +13,11 @@ class Inbox extends React.Component {
         return (
             <div className="inbox">
                 <HeadInbox />
-                <ContainInbox inbox={this.props.inbox} />
+                {
+                    this.props.inbox.map((v, k)=>{
+                        return <ContainInbox inbox={v} key={k} />
+                    })
+                }
             </div>
         )
     }
