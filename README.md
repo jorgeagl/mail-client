@@ -28,6 +28,7 @@ npm install
 ```bash
 npm run dev 
 ```
+#### OR
 ```bash
 npm run prod 
 ```
