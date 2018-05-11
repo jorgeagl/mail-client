@@ -13,6 +13,7 @@ class Details extends React.Component {
             this.setState({
                 email: store.getState().email
             })
+            console.log(store.getState().email);
         })
         
         return (

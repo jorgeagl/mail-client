@@ -49,4 +49,5 @@ let inbox = [
 
 ReactDOM.render(<Inbox inbox={inbox} />, document.getElementById('inbox'));
 ReactDOM.render(<Details />, document.getElementById('details'));
+
 export default Main;
