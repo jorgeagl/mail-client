@@ -21,3 +21,10 @@ brew install node.js
 ```bash
 npm install
 ```
+
+
+### Run proyect
+
+```bash
+npm run dev
+```
