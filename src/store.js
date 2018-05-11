@@ -6,10 +6,10 @@ const reducer = (state, action) => {
             return {
                 email: action.email
             }
-            console.log('action to read email', action);
+            //console.log('action to read email', action);
         break;
         case "REMOVE_EMAIL":
-            console.log("action to remove email");
+            //console.log("action to remove email");
         break;
     }
     return state;
